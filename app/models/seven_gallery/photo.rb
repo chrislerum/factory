@@ -1,3 +1,3 @@
-class Photo < ActiveRecord::Base
+class SevenGallery::Photo < ActiveRecord::Base
   belongs_to :gallery, class_name: "SevenGallery::Gallery"
 end
