@@ -1,5 +1,5 @@
 class GalleriesController < ApplicationController
   def index
-    @galleries = Gallery.all
+    @galleries = SevenGallery::Gallery.all
   end
 end

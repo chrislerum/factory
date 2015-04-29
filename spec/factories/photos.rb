@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :photo, class: "SevenGallery::Photo" do
+  factory :photo, class: 'SevenGallery::Photo' do
 
     factory :photo_one do
     end
