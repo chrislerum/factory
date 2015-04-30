@@ -13,20 +13,20 @@
 
 ActiveRecord::Schema.define(version: 20150429144711) do
 
-  create_table "galleries", force: :cascade do |t|
+  create_table "seven_gallery_galleries", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "photos", force: :cascade do |t|
-    t.integer  "gallery_id"
+  create_table "seven_gallery_photos", force: :cascade do |t|
+    t.integer  "seven_gallery_gallery_id"
     t.string   "caption"
     t.string   "image"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
-  add_index "photos", ["gallery_id"], name: "index_photos_on_gallery_id"
+  add_index "seven_gallery_photos", ["seven_gallery_gallery_id"], name: "index_seven_gallery_photos_on_seven_gallery_gallery_id"
 
 end
